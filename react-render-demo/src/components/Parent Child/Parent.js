@@ -4,12 +4,15 @@ import { Child } from './Child'
 export const Parent = () => {
   const [count, setCount] = useState(0)
 
-  console.log('Parent Render')
+  console.log('Parent Rendering...')
   return (
     <div>
-      <button onClick={() => setCount(c => c + 1)}>Count - {count}</button>
-      <button onClick={() => setCount(0)}>Count to 0</button>
-      <button onClick={() => setCount(5)}>Count to 5</button>
+      <div>
+        <button onClick={() => setCount((c) => c + 1)}>Increment</button>
+        <div>Count is: {count}</div>
+        <button onClick={() => setCount(0)}>Count to 0</button>
+        <button onClick={() => setCount(5)}>Count to 5</button>
+      </div>
       <Child />
     </div>
   )
