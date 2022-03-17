@@ -19,7 +19,7 @@ function App() {
       {/* <UseState /> */}
       {/* <ObjectUseState /> */}
       {/* CASE STUDY: When does a child rerender */}
-      <Parent />
+      {/* <Parent /> */}
       {/* CASE STUDY: Child Optimization 1 - child as prop */}
       {/* <ParentOne /> */}
       {/* CAVEAT TO ABOVE OPTIMIZATION */}
@@ -28,12 +28,12 @@ function App() {
       {/* <ParentTwo /> */}
       {/* CAVEAT TO ABOVE OPTIMIZATION */}
       {/* <ParentThree /> */}
-      {/* CASE STUDY: useContext */}
+      {/* CASE STUDY: useContext && How to Optimize it */}
       {/* <ContextParent /> */}
       {/* CASE STUDY: Multiple Context */}
-      {/* <ContextParent>
+      <ContextParent>
         <ChildA />
-      </ContextParent> */}
+      </ContextParent>
     </div>
   )
 }
